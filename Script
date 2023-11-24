@@ -77,17 +77,7 @@ local Tab = Window:CreateTab("FE Scripts", 4483362458)
 
 local Section = Tab:CreateSection("FE Scripts")
 
-local Button = Tab:CreateButton({
-   Name = "FE Speed Coil",
-   Callback = function()
-   loadstring(game:HttpGet(('https://raw.githubusercontent.com/CJFabro8/Client-Things/main/Speed%20Coil'),true))()
-    
-  print("Executed Successfully")
-  
-   end,
-})
-
-
+local Label = Tab:CreateLabel("No Scripts Yet :( MORE SOON THOUGH")
 
 local Tab = Window:CreateTab("Scripts", 4483362458) -- Title, Image
 
@@ -103,8 +93,12 @@ local Button = Tab:CreateButton({
    end,
 })
 
+local Tab = Window:CreateTab("Items", 4483362458) 
+
+local Section = Tab:CreateSection("Not FE")
+
 local Button = Tab:CreateButton({
-   Name = "F3X NOT FE",
+   Name = "F3X ",
    Callback = function()
    loadstring(game:GetObjects("rbxassetid://6695644299")[1].Source)()
    
@@ -115,10 +109,22 @@ local Button = Tab:CreateButton({
 
 
 local Button = Tab:CreateButton({
-   Name = "LazerGun NOT FE",
+   Name = "LazerGun",
    Callback = function()
    loadstring(game:HttpGet(('https://raw.githubusercontent.com/Yeeeter30/Lazer-Gun/main/Script'),true))()
      
+  print("Executed Successfully")
+  
+   end,
+})
+
+local Section = Tab:CreateSection("FE")
+
+local Button = Tab:CreateButton({
+   Name = "FE Speed Coil",
+   Callback = function()
+   loadstring(game:HttpGet(('https://raw.githubusercontent.com/CJFabro8/Client-Things/main/Speed%20Coil'),true))()
+    
   print("Executed Successfully")
   
    end,
